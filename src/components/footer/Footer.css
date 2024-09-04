@@ -1,0 +1,33 @@
+.footer {
+    /* margin: 10px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-top: 1px solid #797979;
+    padding: 15px 0;
+    background: #076e83;
+    color: #fff;
+    width: 112%;
+    margin-left: -6%;
+    margin-bottom: 0;
+    height: 100px;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px 0 10px;
+}
+.footer p{
+    margin-left: 12px;
+}
+
+/* media query */
+@media (max-width:768px){
+    .footer{
+        display: block !important;
+    }
+    .footer ul{
+         margin-top: 15px ;
+    }
+}

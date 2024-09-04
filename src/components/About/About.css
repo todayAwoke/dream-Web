@@ -1,0 +1,132 @@
+.about{
+    margin: 80px auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.about-top{
+    display: block;
+}
+.main-content{
+    /* margin: 100px auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+.about-right{
+    flex-basis: 56%;
+    background: #fbf9f9;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.play-con{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0a7095;
+    /* text-transform: uppercase; */
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: 50%;
+}
+.about h2{
+    font-weight: 600;
+    font-size: 32px;
+   color: #0a7095;
+    margin: 10px 0;
+    max-width: 400px;
+    margin-left: 50%;
+}
+.about p{   
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+.second-p{
+    margin-top: 20px;
+}
+.about-bottom{
+    margin: 80px auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 18%;
+}
+.about-slider{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0;
+    line-height: 1.4;
+    position: relative;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+.about-slider h2{
+     margin-left: 0;
+}
+.about-slider:hover{
+ background: #076e83;
+color: #fff;
+transform: transition(0.5s);
+transform: scale(1.1);
+h2{
+    color: #fff;
+    margin-left: 0;
+}
+}
+
+/* media query */
+@media(max-width: 700px) {
+.main-content{
+ display: block;
+align-items: center !important;
+justify-content: center;
+}
+.about-right h2{ 
+font-size: 20px !important;
+}
+.about-title h2{
+    margin-left: 30px;
+}
+.about-title h3{
+margin-left: 100px;
+}
+.about-right p{ 
+font-size: 16px !important;
+
+}
+.about-bottom{ 
+    display: block !important; 
+}
+.about-bottom h2{
+font-size:20px;
+margin-left: 20%;
+}
+.about-bottom p{
+    font-size: 16px;
+   
+}
+}
