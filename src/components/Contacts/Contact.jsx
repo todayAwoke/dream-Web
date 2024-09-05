@@ -5,6 +5,8 @@ import mail_icon from '../../assets/mail-icon.png'
 import phone_icon from '../../assets/phone-icon.png'
 import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
+import facebook_icon from '../../assets/facebook_icon.jpeg'
+import telegram_icon from '../../assets/telegram_icon.jpeg'
 const Contact = () => {
     const [result, setResult] = React.useState("");
     const onSubmit = async (event) => {
@@ -36,9 +38,13 @@ const Contact = () => {
                 <h3>Send us a message <img src={msg_icon} alt='' /> </h3 >
                 <p>we are in addis ababa and ready to reach out to you</p>
                 <ul>
-                    <li> <img src={mail_icon} /> contact@addisababa.edu</li>
-                    <li> <img src={phone_icon} /> +25123456789</li>
+                    <li> <img src={mail_icon} /> dreamtutor.et@gmail.com
+                    </li>
+                    <li> <img src={phone_icon} /> +251983017128</li>
+                    <li> <img src={phone_icon} /> +251922347773</li>
                     <li> <img src={location_icon} />Addis Ababa</li>
+                    <li> <img src={telegram_icon} /> <a href='https/t.me/DLC_Tutors'>Telegram</a> </li>
+                    <li> <img src={facebook_icon} /> <a href='https/t.me/DLC_Tutors'>Facebook</a> </li>
                 </ul>
                 <div>
                     <iframe className='location'
@@ -61,7 +67,7 @@ const Contact = () => {
                 </form>
                 <span className='result'>{result}</span>
             </div>
-        </div>
+        </div >
     )
 }
 

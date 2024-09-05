@@ -21,7 +21,7 @@
     width: 15%;
     height: 100px;
     p{
-        margin-top: -18px;
+        /* margin-top: -18px; */
         font-size: 20px;
         font-weight: 600;
         color: #fff;
@@ -44,7 +44,7 @@
     width: 15%;
     height: 100px;
      p{
-        margin-top: -18px;
+        /* margin-top: -10px; */
         font-size: 20px;
         font-weight: 600;
         color: #fff;

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import './Testimonial.css'
+import './Testimonail.css'
 import next_icon from '../../assets/next-icon.png'
 import back_icon from '../../assets/back-icon.png'
 import user_1 from '../../assets/user-1.png'
@@ -85,3 +85,4 @@ const Testimonail = () => {
 }
 
 export default Testimonail
+

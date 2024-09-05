@@ -6,10 +6,10 @@ const Hero = () => {
         <div className='hero container' id='hero'>
             <div className='hero-text'>
                 <div className='left-ballon'>
-                    <p>Discount<span className='discount'> <br />50% <br />OFF</span></p>
+                    <p><span className='discount'> 50% OFF</span> <br />Discount</p>
                 </div>
                 <div className='right-ballon'>
-                    <p>Discount<span className='discount'> <br />50% <br />OFF</span></p>
+                    <p><span className='discount'> 50% OFF</span> <br />Discount</p>
                 </div>
                 <h1>We are Dream team for dreamer</h1>
                 <p className='hero-para'>the leading provider of quality education and skill development in Ethiopia, empowering

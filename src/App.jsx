@@ -1,18 +1,15 @@
 import React from 'react'; // Import React
+//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
-// import Programs from './components/Services/Services.jsx'; // Uncomment if needed
 import Title from './components/Title/Title.jsx';
 import About from './components/About/About.jsx';
 import Services from './components/Services/Services.jsx';
-import Testimonial from './components/Testimonials/Testimonail.jsx'; // Fixed typo
+import Testimonial from './components/Testimonails/Testimonail.jsx'; // Fixed typo
 import Contact from './components/Contacts/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
-// import { BrowserRouter as Router } from 'react-router-dom'; // Uncomment if needed
-// import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx'; // Uncomment if needed
 
 function App() {
-    // const [playState, setPlayState] = useState(false); // Uncomment if needed
     return (
         <>
             <Navbar />
