@@ -9,7 +9,7 @@ import program_6 from '../../assets/program_6.jpeg'
 import program_icon_1 from '../../assets/program-icon-1.png'
 import program_icon_2 from '../../assets/program-icon-2.png'
 import program_icon_3 from '../../assets/program-icon-3.png'
-const Programs = () => {
+const Services = () => {
     return (
         <div className='services' id='services'>
             <div className='first'>
@@ -68,4 +68,4 @@ const Programs = () => {
     )
 }
 
-export default Programs
+export default Services

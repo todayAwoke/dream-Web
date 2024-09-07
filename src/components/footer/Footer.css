@@ -9,9 +9,12 @@
     background: #076e83;
     color: #fff;
     width: 112%;
-    margin-left: -6%;
-    margin-bottom: 0;
+    
     height: 100px;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .footer ul li{
     list-style: none;
@@ -20,6 +23,15 @@
 }
 .footer p{
     margin-left: 12px;
+}
+.footer-span {
+    color: #a2996f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0;
 }
 
 /* media query */

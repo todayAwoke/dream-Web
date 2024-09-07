@@ -1,7 +1,7 @@
 nav{
 width: 100%;
 /* background: #333; */
-color: #fff;
+color: #fff; 
 padding: 4px 0;
 position: fixed;
 top: 0;
@@ -10,6 +10,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 10;
+background: #076e83;
 }
 .logo{
     width: 60px;
@@ -20,10 +21,11 @@ z-index: 10;
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 0 0 15px;
     position: relative;
     font-size: 16px;
     cursor: pointer;
+    padding-left: 0;
 }
 .dark-nav{
     background: #076e83;
