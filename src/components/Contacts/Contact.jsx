@@ -7,6 +7,7 @@ import location_icon from '../../assets/location-icon.png'
 import white_arrow from '../../assets/white-arrow.png'
 import facebook_icon from '../../assets/facebook_icon.jpeg'
 import telegram_icon from '../../assets/telegram_icon.jpeg'
+import { Link } from 'react-router-dom'
 const Contact = () => {
     const [result, setResult] = React.useState("");
     const onSubmit = async (event) => {
@@ -43,7 +44,7 @@ const Contact = () => {
                     <li> <img src={phone_icon} /> +251983017128</li>
                     <li> <img src={phone_icon} /> +251922347773</li>
                     <li> <img src={location_icon} />Addis Ababa</li>
-                    <li> <img src={telegram_icon} /> <a href='https/t.me/DLC_Tutors'>Telegram</a> </li>
+                    <li> <img src={telegram_icon} /> <Link to='https://t.me/DLC_Tutors'>Telegram</Link></li>
                     <li> <img src={facebook_icon} /> <a href='https/t.me/DLC_Tutors'>Facebook</a> </li>
                 </ul>
                 <div>

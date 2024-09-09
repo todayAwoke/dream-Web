@@ -11,6 +11,8 @@
 }
 body{
     background: #F5F5F5;
+    margin: 0;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -59,4 +61,8 @@ margin-left: 10px;
     .btn{
         padding: 10px 15px;
     }
+}
+.selected{
+    background: #076e83;
+    color: #fff !important;
 }

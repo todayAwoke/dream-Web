@@ -21,17 +21,35 @@ background: #076e83;
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 20px;
     position: relative;
     font-size: 16px;
     cursor: pointer;
     padding-left: 0;
 }
+
 .dark-nav{
     background: #076e83;
     transition: 0.5s;
 }
-
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e6db0c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
 /* media queries */
 .menu-icon{
     display: none;

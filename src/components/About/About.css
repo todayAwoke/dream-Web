@@ -5,7 +5,6 @@
     justify-content: space-between;
     overflow: hidden;
 }
-
 .about-top{
     display: block;
 }
@@ -75,24 +74,31 @@
     margin-top: 20px;
 }
 .about-bottom{
-    margin: 80px auto; 
+    margin: 80px 0; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    flex-basis: 18%;
+    width: 90%;
+    flex-basis: 20%;
 }
 .about-slider{
-    margin: 0 40px;
-    overflow: hidden;
+    margin: 0 30px;
+    /* overflow-x: hidden; */
     border-radius: 10px;
     padding: 20px;
     border: 0;
     line-height: 1.4;
     position: relative;
+    width: 100%;
     margin-bottom: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     
+}
+.paragraph{
+    font-size: 16px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
 }
 .about-slider h2{
      margin-left: 0;

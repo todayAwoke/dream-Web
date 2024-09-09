@@ -1,35 +1,46 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
-import { useNavigate } from 'react-router-dom';
-// React
-//import { motion } from "framer-motion"
-// // React Server Components
-// import * as motion from "framer-motion/client"
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 const Hero = () => {
-    const navigate = useNavigate();
-
-    const handleRegister = () => {
-        navigate('/dream-Web/register');
+    const { t } = useTranslation();
+    const textVariants = {
+        hidden: { opacity: 0, y: 40 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
     };
-
     return (
         <div className='hero container' id='hero'>
             <div className='hero-text'>
                 <div className='left-ballon'>
-                    <p><span className='discount'>50% OFF</span><br />Discount</p>
+                    <p><span className='discount'>50% OFF</span><br />{t("Discount")}</p>
                 </div>
                 <div className='right-ballon'>
-                    <p><span className='discount'>50% OFF</span><br />Discount</p>
+                    <p><span className='discount'>50% OFF</span><br />{t("Discount")}</p>
                 </div>
-                <h1>We are Dream team for dreamers</h1>
-                <p className='hero-para'>
-                    The leading provider of quality education and skill development in Ethiopia, empowering students to reach their full potential and contribute to the nation’s socio-economic progress, and providing equitable access to educational opportunities for all students.
-                </p>
-                <button className='btn' onClick={handleRegister}>
-                    Apply as a Tutor
-                    <img src={dark_arrow} alt='btn' className="arrow" />
-                </button>
+                <motion.h1
+                    initial="hidden"
+                    animate="visible"
+                    variants={textVariants}
+                >
+                    {t("Slogan")}
+                </motion.h1>
+                <motion.p
+                    className='hero-para'
+                    initial="hidden"
+                    animate="visible"
+                    variants={textVariants}
+                >
+                    {t("hero-para")}
+                </motion.p>
+                <Link to='https://forms.gle/aRgQFXU7x1auJGU76'>
+                    <button className='btn' type='submit'>
+                        {t("Apply-Tutor")}
+                        <img src={dark_arrow} alt='btn' className="arrow" />
+                    </button>
+                </Link>
             </div>
         </div>
     );
