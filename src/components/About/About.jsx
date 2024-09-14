@@ -4,7 +4,10 @@ import './About.css';
 import about_img from '../../assets/about.jpg';
 import play_icon from '../../assets/play-icon.png';
 import Title from '../Title/Title';
+import { useTranslation } from 'react-i18next';
+
 const About = () => {
+    const { t } = useTranslation();
     const fadeInUp = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
@@ -17,10 +20,7 @@ const About = () => {
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}>
-                <p>
-                    The Dream Tutor and Training Service start its journey with the dream. in Addis Ababa Ethiopia in the year 2024 with a vision to empower students and contribute to Ethiopia's socio-economic progress.
-                    By providing quality education and skill development programs.
-                </p>
+                <p>{t('Aboutparagraph')} </p>
             </motion.div>
             <div className='about' id='about'>
                 <div className='about-top'>
@@ -30,7 +30,7 @@ const About = () => {
                         animate="visible"
                         variants={fadeInUp}
                     >
-                        <h2>Dream tutor and training Services</h2>
+                        <h2>{t('Aboutheader')}</h2>
                     </motion.div>
                     <div className='main-content'>
                         <div className='about-left'>
@@ -57,18 +57,8 @@ const About = () => {
                             animate="visible"
                             variants={fadeInUp}
                         >
-                            <p>
-                                The Dream Tutorial and Training Service, located in Addis Ababa, Ethiopia, aims to revolutionize
-                                the educational experience by providing tailored tutoring and skill development programs.
-                                Focused on enhancing academic performance and fostering 21st-century skills, the service offers a range
-                                of educational support, including home tutorials, group tutoring, assignment assistance, and vocational training.
-                            </p>
-                            <p className='second-p'>
-                                With a vision to empower students and contribute to Ethiopia's socio-economic progress, the organization emphasizes quality assurance,
-                                innovative learning experiences, and equitable access to education. Its structured approach includes various aspects such as recruitment, marketing strategies,
-                                competitive analysis, and financial management, all designed to create a sustainable impact and address the diverse needs of students, particularly those from
-                                underprivileged backgrounds.
-                            </p>
+                            <p>{t('Aboutparagraph2')}</p>
+                            <p className='second-p'>{t('Aboutparagraph3')} </p>
                         </motion.div>
                     </div>
                 </div>
@@ -80,26 +70,23 @@ const About = () => {
                     variants={fadeInUp}
                 >
                     <div className='about-slider'>
-                        <h2>Our Mission</h2>
-                        <p>To be the leading provider of quality education and skill development in Ethiopia, empowering
-                            students to reach their full potential and contribute to the nation’s socio-economic progress.</p>
+                        <h2>{t('mesionheader')}</h2>
+                        <p>{t('mesionparagraph')}</p>
                     </div>
                     <div className='about-slider'>
-                        <h2> Our Vision</h2>
-                        <p>To revolutionize the educational landscape in Ethiopia by delivering innovative and engaging
-                            learning experiences, fostering 21st century skills, and providing equitable access to educational
-                            opportunities for all students.</p>
+                        <h2>{t('visionhearder')}</h2>
+                        <p>{t('visionparapraph')}</p>
                     </div>
                     <div className='about-slider'>
-                        <h2 className='values'> Our Values</h2>
-                        <p className='paragraph'>-Empowerment</p>
-                        <p>-Innovation</p>
-                        <p>-Excellence</p>
-                        <p>-Humanity</p>
-                        <p>-Quality service</p>
-                        <p>-Accessibility</p>
-                        <p>-Inclusiveness</p>
-                        <p>-Social responsibility</p>
+                        <h2 className='values'> {t('Valueheader')}</h2>
+                        <p >-{t('Empowerment')}</p>
+                        <p>-{t('Innovation')}</p>
+                        <p>-{t('Excellence')}</p>
+                        <p>-{t('Humanity')}</p>
+                        <p> -{t('Quality_service')}</p>
+                        <p>-{t('Accessibility')}</p>
+                        <p>-{t('Inclusiveness')}</p>
+                        <p>-{t('Social responsibility')}</p>
                     </div>
                 </motion.div>
             </div>

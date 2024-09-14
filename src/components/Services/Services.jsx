@@ -9,32 +9,37 @@ import program_6 from '../../assets/program_6.jpeg'
 import program_icon_1 from '../../assets/program-icon-1.png'
 import program_icon_2 from '../../assets/program-icon-2.png'
 import program_icon_3 from '../../assets/program-icon-3.png'
+import { useTranslation } from 'react-i18next';
+
 const Services = () => {
+    const { t } = useTranslation();
     return (
         <div className='services' id='services'>
+            <h3 className="title">{t('ServicesTitle')}</h3>
+            <h1 className="subtitle">{t('ServicesSubtitle')}</h1>
             <div className='first'>
                 <div className='service'>
                     <img src={program_1} alt='' />
                     <div className='caption'>
                         <img src={program_icon_1} alt='' />
-                        <h3>Home tutorial</h3>
-                        <p>Personalized tutoring sessions are conducted in the comfort of students' homes to enhance their learning experience</p>
+                        <h3>{t('Home-tutorial')}</h3>
+                        <p>{t('service1')}</p>
                     </div>
                 </div>
                 <div className='service'>
                     <img src={program_2} alt='' />
                     <div className='caption'>
                         <img src={program_icon_2} alt='' />
-                        <h3>Group tutor</h3>
-                        <p>Group tutoring sessions are organized based on venue availability, accommodating students of various academic levels.</p>
+                        <h3>{t('Group-tutoring')}</h3>
+                        <p>{t('service2')}</p>
                     </div>
                 </div>
                 <div className='service'>
                     <img src={program_3} alt='' />
                     <div className='caption'>
                         <img src={program_icon_3} alt='' />
-                        <h3>Assignment assistance</h3>
-                        <p>Dedicated support is provided to help students complete assignments effectively and improve their understanding of subjects.</p>
+                        <h3>{t('Assignment-assistance')}</h3>
+                        <p>{t('service3')}</p>
                     </div>
                 </div>
             </div>
@@ -43,28 +48,28 @@ const Services = () => {
                     <img src={program_4} alt='' />
                     <div className='caption'>
                         <img src={program_icon_3} alt='' />
-                        <h3>Summer self- development</h3>
-                        <p>Engaging summer programs are offered to promote personal growth and skill development during the school break</p>
+                        <h3>{t('Summer-Programs')}</h3>
+                        <p>{t('service4')}</p>
                     </div>
                 </div>
                 <div className='service'>
                     <img src={program_5} alt='' />
                     <div className='caption'>
                         <img src={program_icon_3} alt='' />
-                        <h3>Training</h3>
-                        <p>Comprehensive training sessions are available to equip students with essential skills for their academic and professional futures</p>
+                        <h3>{t('Training')}</h3>
+                        <p>{t('service5')}</p>
                     </div>
                 </div>
                 <div className='service'>
                     <img src={program_6} alt='' />
                     <div className='caption'>
                         <img src={program_icon_3} alt='' />
-                        <h3>Language and programming training</h3>
-                        <p>Language and programming courses are offered when feasible, aiming to enhance students' communication and technical skills.</p>
+                        <h3>{t('Language-programming')}</h3>
+                        <p>{t('service6')}</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

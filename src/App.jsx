@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'; // Import React
 import { Route, Routes } from 'react-router-dom';
+// import './App.css';
 import i18n from 'i18next';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';
@@ -17,11 +18,8 @@ function DreamWeb() {
         <>
             <Hero />
             <About />
-            <Title subTitle='Services' title='What We offer' />
             <Services />
-            <Title subTitle='Testimonail' title='What Our Client Say' />
             <Testimonail />
-            <Title subTitle='Contact' title='Get In Touch' />
             <Contact />
         </>
     );
