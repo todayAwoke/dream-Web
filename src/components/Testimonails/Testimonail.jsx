@@ -16,7 +16,7 @@ const Testimonail = () => {
             <h3 className="title">{t('TestimonialTitle')}</h3>
             <h1 className="subtitle">{t('TestimonialSubtitle')}</h1>
             <div className='slider'>
-                <ul  >
+                <ul >
                     <div className='slider-fisrt'>
                         <li>
                             <div className="slide">
