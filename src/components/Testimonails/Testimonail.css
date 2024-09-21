@@ -89,6 +89,12 @@ left: 0;
     .slider-fisrt{
         display: block;
     }
+     .user-info{
+       width: 100%;
+       text-align: center;
+       font-size: 15px; 
+     }  
+
     .slider-second{
         display: block;
     }

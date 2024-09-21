@@ -54,7 +54,7 @@ nav ul li:hover::after{
 .menu-icon{
     display: none;
 }
-@media(max-width: 1000px){
+@media(max-width: 850px){
     .logo{
         width: 60px;
         margin-top: -10px;
@@ -65,7 +65,7 @@ nav ul li:hover::after{
         /* display: block; */
     }
 }
-@media(max-width: 840px){
+@media(max-width: 600px){
     
     nav{
         padding: 15px 0;

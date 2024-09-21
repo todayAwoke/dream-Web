@@ -64,6 +64,20 @@
 .result{
     color: #076e83;
 }
+.backtop{
+
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
 @media (max-width: 768px){
     .contact{ 
         display: block;

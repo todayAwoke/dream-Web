@@ -4,7 +4,6 @@ import './Hero.css';
 import dark_arrow from '../../assets/dark-arrow.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-
 const Hero = () => {
     const { t } = useTranslation();
     const textVariants = {
@@ -14,12 +13,6 @@ const Hero = () => {
     return (
         <div className='hero container' id='hero'>
             <div className='hero-text'>
-                <div className='left-ballon'>
-                    <p><span className='discount'>50% OFF</span><br />{t("Discount")}</p>
-                </div>
-                <div className='right-ballon'>
-                    <p><span className='discount'>50% OFF</span><br />{t("Discount")}</p>
-                </div>
                 <motion.h1
                     initial="hidden"
                     animate="visible"
@@ -27,14 +20,14 @@ const Hero = () => {
                 >
                     {t("Slogan")}
                 </motion.h1>
-                <motion.p
+                {/* <motion.p
                     className='hero-para'
                     initial="hidden"
                     animate="visible"
                     variants={textVariants}
                 >
                     {t("hero-para")}
-                </motion.p>
+                </motion.p> */}
                 <Link to='https://forms.gle/aRgQFXU7x1auJGU76'>
                     <button className='btn' type='submit'>
                         {t("Apply-Tutor")}

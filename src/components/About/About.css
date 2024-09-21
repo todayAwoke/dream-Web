@@ -1,5 +1,5 @@
 .about{
-    margin: 80px auto;
+    margin: 80px 0 auto;
     display: block;
     align-items: center;
     justify-content: space-between;
@@ -94,6 +94,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     
 }
+.about-slider p:hover{
+    transform: scale(1.1);
+cursor: pointer;
+    h2{
+        color: #fff;
+        margin-left: 0;
+    }
+}
 .paragraph{
     font-size: 16px;
     margin: 10px 0;
@@ -108,12 +116,14 @@
 color: #fff;
 transform: transition(0.5s);
 transform: scale(1.1);
-h2{
-    color: #fff;
-    margin-left: 0;
 }
+.our-team h2{
+    margin: 0 0 0 0;
+    color: #076e83;
+    font-size: 30px;
+    font-weight: 600;
+    
 }
-
 /* media query */
 @media(max-width: 700px) {
 .main-content{

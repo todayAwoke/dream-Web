@@ -5,7 +5,10 @@ import about_img from '../../assets/about.jpg';
 import play_icon from '../../assets/play-icon.png';
 import Title from '../Title/Title';
 import { useTranslation } from 'react-i18next';
-
+import user_1 from '../../assets/user-1.png'
+import user_2 from '../../assets/user-2.png'
+import user_3 from '../../assets/user-3.png'
+import user_4 from '../../assets/user-4.png'
 const About = () => {
     const { t } = useTranslation();
     const fadeInUp = {
@@ -62,7 +65,6 @@ const About = () => {
                         </motion.div>
                     </div>
                 </div>
-
                 <motion.div
                     className='about-bottom'
                     initial="hidden"
@@ -89,6 +91,91 @@ const About = () => {
                         <p>-{t('Social responsibility')}</p>
                     </div>
                 </motion.div>
+            </div>
+            <div className='our-team'>
+                <h2>{t('Ourteam')}</h2>
+                <div className='slider'>
+                    <ul>
+                        <div className='slider-fisrt'>
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_1} alt='' />
+                                        <div>
+                                            <h3>John Doe 1</h3>
+                                            <span>Designer</span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_2} alt='' />
+                                        <div>
+                                            <h3>Awoke 1</h3>
+                                            <span>Designer</span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_3} alt='' />
+                                        <div>
+                                            <h3>John Doe 2</h3>
+                                            <span>Designer</span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+                        </div>
+                        <div className='slider-second'>
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_4} alt='' />
+                                        <div>
+                                            <h3>John Doe 3</h3>
+                                            <span>search me </span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_4} alt='' />
+                                        <div>
+                                            <h3>John Doe 3</h3>
+                                            <span>search me </span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="slide">
+                                    <div className='user-info'>
+                                        <img src={user_4} alt='' />
+                                        <div>
+                                            <h3>John Doe 3</h3>
+                                            <span>search me </span>
+                                        </div>
+                                    </div>
+                                    <p>this is the discription what we will insert</p>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+
+                </div>
             </div>
         </>
     );

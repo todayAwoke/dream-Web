@@ -30,7 +30,6 @@ const Testimonail = () => {
                                 <p>this is the discription what we will insert</p>
                             </div>
                         </li>
-
                         <li>
                             <div className="slide">
                                 <div className='user-info'>
