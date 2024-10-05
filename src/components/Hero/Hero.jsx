@@ -20,17 +20,16 @@ const Hero = () => {
                 >
                     {t("Slogan")}
                 </motion.h1>
-                {/* <motion.p
-                    className='hero-para'
-                    initial="hidden"
-                    animate="visible"
-                    variants={textVariants}
-                >
-                    {t("hero-para")}
-                </motion.p> */}
+
                 <Link to='https://forms.gle/aRgQFXU7x1auJGU76'>
                     <button className='btn' type='submit'>
                         {t("Apply-Tutor")}
+                        <img src={dark_arrow} alt='btn' className="arrow" />
+                    </button>
+                </Link>
+                <Link to='https://forms.gle/BbYCT3uCRzGRqWpL7'>
+                    <button className='btn' id='right-btn' type='submit'>
+                        {t("apply_family")}
                         <img src={dark_arrow} alt='btn' className="arrow" />
                     </button>
                 </Link>
