@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
-import dark_arrow from '../../assets/dark-arrow.png';
+import dark_arrow from '../../assets/white-arrow.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import AAU from '../../assets/AAU.png';
