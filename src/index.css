@@ -67,7 +67,7 @@ margin-left: 10px;
 }
 /* media queries */
 
-@media(max-width: 1200px){
+/* @media(max-width: px){
     .container{
         padding-left: 5%;
         padding-right: 5%;
@@ -79,4 +79,4 @@ margin-left: 10px;
 .selected{
     background: #076e83;
     color: #fff !important;
-}
+} */
