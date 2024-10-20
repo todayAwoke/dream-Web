@@ -2,6 +2,7 @@
 .hero{
     width: 100%;
     height: 100vh;
+     min-height: 400px;
     /* background:linear-gradient(rgba(8,0,58,0.5),rgba(8,0,58,0.7)), url("../../assets/hero.jpg"); */
     background-size: cover;
     background-position: center;
@@ -14,21 +15,23 @@
 
 }
 
+.typedText{ 
+    margin-top:10%
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Optional: for better text visibility */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    
+    padding: 20px; /* Add some padding */
 }
-
 
 .bg-image{
     background-image: cover !important;
@@ -88,7 +91,9 @@
         align-items: center !;
         justify-content: center !important;
     }
-
+.typedText{
+    font-size:18px
+}
     .arrow{
         display: none !important;
     }
@@ -99,11 +104,17 @@
         font-size: 30px;
         max-width: 400px;
     }
-   .left-ballon p {
-    /* display: none; */
-    font-size: 14px !important;
-   }
-   
+.hero {
+        height: 60vh; /* Reduce height on smaller screens */
+    }
+.typedText{
+   font-size: 15px;
+   display:block;
+}
+    .btn {
+        width: 100%; /* Make buttons full width */
+        font-size: 14px; /* Smaller font size */
+    }
     .hero-text p{
         font-size: 15px;
         max-width: 350px;

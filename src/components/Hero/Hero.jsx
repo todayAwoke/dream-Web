@@ -24,6 +24,10 @@ const Hero = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [typedText, setTypedText] = useState('');
+    const fullText = ' Empower, Excel and Educate!';
+    const typingSpeed = 200; // milliseconds
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -33,6 +37,21 @@ const Hero = () => {
         return () => clearInterval(interval);
     }, [sliders.length]);
 
+
+    useEffect(() => {
+        let index = 0;
+        const typingInterval = setInterval(() => {
+            if (index < fullText.length) {
+                setTypedText((prev) => prev + fullText.charAt(index));
+                index++;
+            } else {
+                clearInterval(typingInterval); // Stop typing once complete
+            }
+        }, typingSpeed);
+        return () => clearInterval(typingInterval);
+    }, [fullText]);
+
+
     const { t } = useTranslation();
     const textVariants = {
         hidden: { opacity: 0, y: 40 },
@@ -41,7 +60,6 @@ const Hero = () => {
 
     return (
         <div className='hero container' id='hero' style={{ backgroundImage: `url(${sliders[currentIndex]})` }}>
-
             <div className='hero-overlay'>
                 <div className='hero-text'>
                     <motion.h1
@@ -50,6 +68,7 @@ const Hero = () => {
                         variants={textVariants}
                     >
                         {t("Slogan")}
+
                     </motion.h1>
                     <Link to='https://forms.gle/aRgQFXU7x1auJGU76'>
                         <button className='btn' type='button'>
@@ -63,6 +82,8 @@ const Hero = () => {
                             <img src={dark_arrow} alt='Arrow pointing right' className="arrow" />
                         </button>
                     </Link>
+                    <h3 className="typedText">{typedText}</h3>
+
                 </div>
             </div>
         </div>
