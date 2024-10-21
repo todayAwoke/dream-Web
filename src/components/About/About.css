@@ -128,16 +128,37 @@
     align-items: center;
     justify-content: center;
 }
-
+.our-team{
+    margin-top: 5px;
+}
 .our-team h2 {
     margin: 0;
     color: #076e83;
     font-size: 30px;
     font-weight: 600;
 }
+.slider{
+    display: block;
+    margin:20px;
+}
+.slider-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-second{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+
+}
+.slide{
+    margin: 5px;
+    padding: 5px;
+}
 
 /* Media Query for smaller screens */
-@media (max-width: 700px) {
+@media (max-width: 680px) {
     .main-content {
         display: block;
         align-items: center !important;
@@ -179,6 +200,18 @@
 
     .about-slider p {
         font-size: 14px; /* Adjust for smaller screens */
+    }
+.slider-first {
+      display: block;
+        width: 80%;
+        margin: auto;
+        border-radius: 12px;  
+      }
+    .slider-second{
+        display: block;
+        width: 80%;
+        margin: auto;
+        border-radius: 12px;
     }
 }
 

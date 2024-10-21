@@ -5,10 +5,10 @@ import about_img from '../../assets/about.jpg';
 import play_icon from '../../assets/play-icon.png';
 import Title from '../Title/Title';
 import { useTranslation } from 'react-i18next';
-import user_1 from '../../assets/user-1.png'
-import user_2 from '../../assets/user-2.png'
-import user_3 from '../../assets/user-3.png'
-import user_4 from '../../assets/user-4.png'
+import user_1 from '../../assets/kal.png'
+import user_2 from '../../assets/bini.jpg'
+import user_3 from '../../assets/baze.jpg'
+import user_4 from '../../assets/AWOKE.jpg'
 const About = () => {
     const { t } = useTranslation();
     const fadeInUp = {
@@ -31,8 +31,7 @@ const About = () => {
                         className='about-title'
                         initial="hidden"
                         animate="visible"
-                        variants={fadeInUp}
-                    >
+                        variants={fadeInUp}>
                         <h2>{t('Aboutheader')}</h2>
                     </motion.div>
                     <div className='main-content'>
@@ -95,88 +94,88 @@ const About = () => {
             <div className='our-team'>
                 <h2>{t('Ourteam')}</h2>
                 <div className='slider'>
-                    <ul>
-                        <div className='slider-fisrt'>
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_1} alt='' />
-                                        <div>
-                                            <h3>John Doe 1</h3>
-                                            <span>Designer</span>
-                                        </div>
+                    <div className='slider-second'>
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_1} alt='' />
+                                    <div>
+                                        <h3>Kaleab</h3>
+                                        <span>Executive Management</span>
                                     </div>
-                                    <p>this is the discription what we will insert</p>
                                 </div>
-                            </li>
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_2} alt='' />
-                                        <div>
-                                            <h3>Awoke 1</h3>
-                                            <span>Designer</span>
-                                        </div>
+                                <p>Make decisions and overall direction.Lead the management team</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_2} alt='' />
+                                    <div>
+                                        <h3>Biniyam</h3>
+                                        <span>Administrative Assistant</span>
                                     </div>
-                                    <p>this is the discription what we will insert</p>
                                 </div>
-                            </li>
+                                <p>Greet Clients and manage communication Assist with scheduling appointments and maintaining records</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_3} alt='' />
+                                    <div>
+                                        <h3>G/Selassie</h3>
+                                        <span>Head- Operational Management</span>
+                                    </div>
+                                </div>
+                                <p>Make collaboration with the quality assurance body to ensure the objectives of the
+                                    entity.</p>
+                            </div>
+                        </li>
+                    </div>
 
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_3} alt='' />
-                                        <div>
-                                            <h3>John Doe 2</h3>
-                                            <span>Designer</span>
-                                        </div>
+                    <div className='slider-first'>
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_3} alt='' />
+                                    <div>
+                                        <h3>Bazezew</h3>
+                                        <span>Head- Human Resources Management</span>
                                     </div>
-                                    <p>this is the discription what we will insert</p>
                                 </div>
-                            </li>
-                        </div>
-                        <div className='slider-second'>
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_4} alt='' />
-                                        <div>
-                                            <h3>John Doe 3</h3>
-                                            <span>search me </span>
-                                        </div>
+                                <p>Manages recruitment, training, and employee relations.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_2} alt='' />
+                                    <div>
+                                        <h3>Endale</h3>
+                                        <span>Head- Quality Assurance Management</span>
                                     </div>
-                                    <p>this is the discription what we will insert</p>
                                 </div>
-                            </li>
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_4} alt='' />
-                                        <div>
-                                            <h3>John Doe 3</h3>
-                                            <span>search me </span>
-                                        </div>
-                                    </div>
-                                    <p>this is the discription what we will insert</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="slide">
-                                    <div className='user-info'>
-                                        <img src={user_4} alt='' />
-                                        <div>
-                                            <h3>John Doe 3</h3>
-                                            <span>search me </span>
-                                        </div>
-                                    </div>
-                                    <p>this is the discription what we will insert</p>
-                                </div>
-                            </li>
-                        </div>
-                    </ul>
+                                <p>Ensures tutoring training quality and effectiveness through communicating with
+                                    the operation body.</p>
+                            </div>
+                        </li>
 
+                        <li>
+                            <div className="slide">
+                                <div className='user-info'>
+                                    <img src={user_4} alt='' />
+                                    <div>
+                                        <h3>Awoke Dejenie</h3>
+                                        <span>Head- Technology, Digital, information and marketing Management</span>
+                                    </div>
+                                </div>
+                                <p>Manage and ensure the technological advancement</p>
+                            </div>
+                        </li>
+                    </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

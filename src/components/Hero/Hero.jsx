@@ -28,12 +28,10 @@ const Hero = () => {
     const fullText = ' Empower, Excel and Educate!';
     const typingSpeed = 200; // milliseconds
 
-
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % sliders.length);
         }, 3000);
-
         return () => clearInterval(interval);
     }, [sliders.length]);
 
