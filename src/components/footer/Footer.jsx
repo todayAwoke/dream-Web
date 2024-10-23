@@ -34,10 +34,10 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="text-center text-gray-400 mt-4">
-                @ 2024 Dream. All Rights Reserved
-                <a href="#" className="text-white hover:underline ml-1">Developed By Awoke Dejenie</a>
-            </p>
+            <div className="flex flex-col items-center text-gray-400 mt-4">
+                <p className="text-center">@ 2024 Dream. All Rights Reserved</p>
+                <a href="#" className="text-white hover:underline mt-1 text-center">Developed By Awoke Dejenie</a>
+            </div>
         </div>
     );
 };

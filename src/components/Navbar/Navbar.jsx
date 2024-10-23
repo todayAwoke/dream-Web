@@ -28,7 +28,7 @@ const Navbar = () => {
     }
     return (
         <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-            < img src={logo} alt='' className='logo' />
+            < img src={logo} alt='' className='logo w-10 h-10 ' />
             <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
                 <li><Link to='/dream-Web' smooth={true} offset={0} duration={500} onClick={handleClick} > {t("Home")} </Link ></li>
                 <li li > <Link to='/dream-Web/about' smooth={true} offset={-260} duration={500} onClick={handleClick} > {t("About")} </Link ></li>
