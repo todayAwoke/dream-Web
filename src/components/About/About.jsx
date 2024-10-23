@@ -9,6 +9,41 @@ import user_1 from '../../assets/kal.png'
 import user_2 from '../../assets/bini.jpg'
 import user_3 from '../../assets/baze.jpg'
 import user_4 from '../../assets/AWOKE.jpg'
+import user_5 from '../../assets/nati.jpg'
+
+const people = [
+    {
+        name: 'Kaleab',
+        role: 'Executive Manager',
+        imageUrl: user_1,
+    },
+    {
+        name: 'Biniyam',
+        role: 'Administrative Assistant Manager',
+        imageUrl: user_2,
+    },
+    {
+        name: 'Bazezew',
+        role: 'Human Resources Manager',
+        imageUrl: user_3,
+    },
+    {
+        name: 'Natnail',
+        role: 'Operational Manager',
+        imageUrl: user_5,
+    },
+    {
+        name: 'Endale',
+        role: 'Quality Assurance Manager',
+        imageUrl: "",
+    },
+    {
+        name: 'Awoke Dejenie',
+        role: 'ICT & marketing Manager',
+        imageUrl: user_4,
+    },
+];
+
 const About = () => {
     const { t } = useTranslation();
     const fadeInUp = {
@@ -16,14 +51,15 @@ const About = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
     };
     return (
-        <>
-            <Title subTitle='About us' title='Who we are' />
+        <div className='' >
+            <Title  subTitle='About us' title='Who we are' />
             <motion.div
-                className='story'
+                className='sm:px-32'
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}>
-                <p>{t('Aboutparagraph')} </p>
+                    
+                <p className='p-18 text-center sm:text-xl my-10 transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 px-6'>{t('Aboutparagraph')} </p>
             </motion.div>
             <div className='about' id='about'>
                 <div className='about-top'>
@@ -32,7 +68,7 @@ const About = () => {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInUp}>
-                        <h2>{t('Aboutheader')}</h2>
+                        <h2  className=' transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutheader')}</h2>
                     </motion.div>
                     <div className='main-content'>
                         <div className='about-left'>
@@ -59,8 +95,8 @@ const About = () => {
                             animate="visible"
                             variants={fadeInUp}
                         >
-                            <p>{t('Aboutparagraph2')}</p>
-                            <p className='second-p'>{t('Aboutparagraph3')} </p>
+                            {/* <h1>{t('Aboutparagraph2')}</h1> */}
+                            <p className='second-p transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutparagraph3')} </p>
                         </motion.div>
                     </div>
                 </div>
@@ -70,15 +106,15 @@ const About = () => {
                     animate="visible"
                     variants={fadeInUp}
                 >
-                    <div className='about-slider'>
+                    <div className='about-slider borderd shadow-2xl'>
                         <h2>{t('mesionheader')}</h2>
                         <p>{t('mesionparagraph')}</p>
                     </div>
-                    <div className='about-slider'>
+                    <div className='about-slider borderd shadow-2xl'>
                         <h2>{t('visionhearder')}</h2>
                         <p>{t('visionparapraph')}</p>
                     </div>
-                    <div className='about-slider'>
+                    <div className='about-slider borderd shadow-2xl'>
                         <h2 className='values'> {t('Valueheader')}</h2>
                         <p >-{t('Empowerment')}</p>
                         <p>-{t('Innovation')}</p>
@@ -91,92 +127,45 @@ const About = () => {
                     </div>
                 </motion.div>
             </div>
-            <div className='our-team'>
-                <h2>{t('Ourteam')}</h2>
-                <div className='slider'>
-                    <div className='slider-second'>
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_1} alt='' />
-                                    <div>
-                                        <h3>Kaleab</h3>
-                                        <span>Executive Management</span>
-                                    </div>
-                                </div>
-                                <p>Make decisions and overall direction.Lead the management team</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_2} alt='' />
-                                    <div>
-                                        <h3>Biniyammmm</h3>
-                                        <span>Administrative Assistant</span>
-                                    </div>
-                                </div>
-                                <p>Greet Clients and manage communication Assist with scheduling appointments and maintaining records</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_3} alt='' />
-                                    <div>
-                                        <h3>G/Selassie</h3>
-                                        <span>Operational Management</span>
-                                    </div>
-                                </div>
-                                <p>Make collaboration with the quality assurance body to ensure the objectives of the
-                                    entity.</p>
-                            </div>
-                        </li>
-                    </div>
+            {/* <div className=''> */}
 
-                    <div className='slider-first'>
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_3} alt='' />
-                                    <div>
-                                        <h3>Bazezew</h3>
-                                        <span>Head- Human Resources Management</span>
-                                    </div>
-                                </div>
-                                <p>Manages recruitment, training, and employee relations.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_2} alt='' />
-                                    <div>
-                                        <h3>Endale</h3>
-                                        <span>Head- Quality Assurance Management</span>
-                                    </div>
-                                </div>
-                                <p>Ensures tutoring training quality and effectiveness through communicating with
-                                    the operation body.</p>
-                            </div>
-                        </li>
 
-                        <li>
-                            <div className="slide">
-                                <div className='user-info'>
-                                    <img src={user_4} alt='' />
-                                    <div>
-                                        <h3>Awoke Dejenie</h3>
-                                        <span>Head- Technology, Digital, information and marketing Management</span>
-                                    </div>
-                                </div>
-                                <p>Manage and ensure the technological advancement</p>
-                            </div>
-                        </li>
-                    </div>
+            <div className="bg-white text-cray-500 py-2 sm:py-6">
+                <div className="items-center justify-center  ">
+                    <h2 className="text-pretty text-xl text-[#076e83] sm:text-3xl font-semibold tracking-tight sm:text-4xl">
+                        Meet our leadership </h2>
+                    <p className="p-18 text-center sm:text-xl my-10">
+                        We’re a dynamic group of individuals who are passionate about what we do and<br /> dedicated to delivering the
+                        best results for our clients.
+                    </p>
+
                 </div>
-            </div >
-        </>
+                <div className="m-auto px-10">
+                <ul role="list" className="grid grid-cols-1 sm:gap-x-8 md:gap-x-20 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 mb-12 xl:col-span-3 px-7">
+                        {people.map((person) => (
+                            <li key={person.name} className="bg-white rounded-2xl shadow-md p-4  cursor-pointer hover:bg-[#076e83] hover:text-white  relative transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">                                <div className="flex items-center gap-x-6">
+                                <img alt="" src={person.imageUrl} className="h-28 sm:h-32 w-32 rounded-full" />
+                                <div>
+                                    <h3 className="text-base font-semibold leading-7 tracking-tight  md:text-xl">{person.name}</h3>
+                                    <p className="text-sm sm:text font-semibold  md:text-xl">{person.role}</p>
+                                </div>
+                            </div>
+                                {/* Social media icons */}
+                                <div className="absolute sm:bottom-4 bottom-2  right-4 flex space-x-2">
+                                    <a href="#" className="text-indigo-800 hover:text-white border border-indigo-500 rounded-md px-2 py-1 transition-colors duration-200 hover:bg-indigo-500">
+                                        View More...
+                                    </a>
+                                </div>
+
+                            </li>
+                        ))}
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
     );
 }
 

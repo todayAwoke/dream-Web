@@ -1,9 +1,12 @@
 .testimonail {
-    margin: 80px auto;
+    margin: 10% auto;
     padding: 0 80px;
     position: relative;
 }
-
+.testimonail h1{
+    font-size: 26px;
+    font-weight: bolder;
+}
 .next-btn,
 .back-btn {
     position: absolute;
@@ -89,7 +92,7 @@
     text-align: center;
     justify-content: center;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 500;
     color: #076e83;
 }

@@ -51,12 +51,11 @@ const Contact = () => {
 
     return (
         <div className='contact' id='contact'>
-            <h3 className="title">{t('TestimonialTitle')}</h3>
-            <h1 className="subtitle">{t('TestimonialSubtitle')}</h1>
+            <h3 className="title text-[#076e83] text-5xl">{t('ContactTitle')}</h3>
+            <h1 className="subtitle">{t('ContactSubTitle')}</h1>
             <div className='contact-container'>
                 <div className='contact-col'>
-                    <h3>{t('Contactheader')} <img src={msg_icon} alt='' /> </h3>
-                    <p>{t('Contactparapraph')}</p>
+
                     <ul>
                         <li><img src={mail_icon} alt="" /> dreamtutor.et@gmail.com</li>
                         <li><img src={phone_icon} alt="" /> +251983017128</li>
@@ -72,21 +71,20 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact-col">
+                    <h3>{t('Contactheader')} <img src={msg_icon} alt='' /> </h3>
                     <form onSubmit={onSubmit}>
                         <input type="text" name="name" placeholder={t('name')} required />
                         <input type="tel" name="phone" placeholder={t('phone')} required />
                         <textarea name="message" rows="6" placeholder={t('message')} required />
-                        <button className='btn dark-btn'>{t('send')} <img src={white_arrow} alt="" /></button>
+                        <button className="flex ml-10 items-center justify-center px-3 py-2 bg-[#076e83] text-white rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+                            {t('send')}
+                            <img src={white_arrow} alt="" className="ml-2 white-arrow" />
+                        </button>
+
                     </form>
-                    <span className='result'>{result}</span>
                 </div>
             </div>
-            {scrolls && (
-                <div className="backtop">
-                    <a href="#hero"> Back</a>
-                </div >
-            )
-            }
+
         </div >
     );
 }

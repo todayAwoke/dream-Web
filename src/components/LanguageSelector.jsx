@@ -19,8 +19,9 @@ const LanguageSelector = () => {
     }, [i18n, i18n.language]);
 
     return (
-        <div className='language_selector'>
+        <div className=" text-black p-4">
             <select
+                className="bg-white text-black border border-gray-300 rounded p-2"
                 value={i18n.language}
                 onChange={(e) => changeLanguage(e.target.value)}
             >

@@ -9,35 +9,35 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     const { t } = useTranslation();
     return (
-        <div className='footer-container'>
-            <div className='footer'>
-                <div className='footer-social'>
-                    <ul>
-                        <li>
-                            <img src={location_icon} alt="" />
+        <div className="bg-[#076e83] text-white py-8">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+                <div className="footer-social mb-4 md:mb-0">
+                    <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                        <li className="flex items-center">
+                            <img src={location_icon} alt="" className="mr-2" />
                             {t('location')}
                         </li>
-                        <li>
-                            <img src={telegram_icon} alt="" />
-                            <Link to='https://t.me/DLC_Tutors'>Telegram</Link>
+                        <li className="flex items-center">
+                            <img src={telegram_icon} alt="" className="mr-2" />
+                            <Link to='https://t.me/DLC_Tutors' className="hover:underline">Telegram</Link>
                         </li>
-                        <li>
-                            <img src={facebook_icon} alt="" />
-                            <a href='https://facebook.com/DLC_Tutors'>Facebook</a>
+                        <li className="flex items-center">
+                            <img src={facebook_icon} alt="" className="mr-2" />
+                            <a href='https://facebook.com/DLC_Tutors' className="hover:underline">Facebook</a>
                         </li>
                     </ul>
                 </div>
-                <div className='footer-rule'>
-                    <ul>
-                        <li>Terms of Services</li>
-                        <li>Privacy Policy</li>
-                        <li>Cookie Policy</li>
+                <div className="footer-rule mb-4 md:mb-0">
+                    <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+                        <li className='cursor-pointer'>Terms of Services</li>
+                        <li className='cursor-pointer'>Privacy Policy</li>
+                        <li className='cursor-pointer'>Cookie Policy</li>
                     </ul>
                 </div>
             </div>
-            <p className='footer-p'>
+            <p className="text-center text-gray-400 mt-4">
                 @ 2024 Dream. All Rights Reserved
-                <a href='#' className='footer-span'>Developed By Awoke Dejenie</a>
+                <a href="#" className="text-white hover:underline ml-1">Developed By Awoke Dejenie</a>
             </p>
         </div>
     );

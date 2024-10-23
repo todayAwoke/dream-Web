@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'; // Import React
 import { Route, Routes } from 'react-router-dom';
-// import './App.css';
+import './App.css';
 import i18n from 'i18next';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Hero from './components/Hero/Hero.jsx';

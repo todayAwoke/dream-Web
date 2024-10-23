@@ -1,5 +1,7 @@
+
+
 .about {
-    margin: 80px 0 auto;
+    margin: 0;
     display: block;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +20,7 @@
 }
 
 .story {
-    margin: 12px 6% 0 12%;
+
     font-size: 18px;
     line-height: 1.5;
     max-width: 800px;
@@ -33,7 +35,6 @@
 
 .about-right {
     flex-basis: 56%;
-    background: #fbf9f9;
     border: 0;
     border-radius: 10px;
     padding: 0 20px;
@@ -66,7 +67,7 @@
 .about h2 {
     font-weight: 600;
     font-size: 32px;
-    color: #0a7095;
+    /* color: #0a7095; */
     margin: 10px 0;
     max-width: 400px;
     margin-left: 50%;
@@ -85,10 +86,11 @@
     margin: 80px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+     justify-content: center; 
     width: 90%;
-    flex-basis: 20%;
+    /* flex-basis: 20%; */
 }
+
 
 .about-slider {
     margin: 0 30px;
@@ -101,8 +103,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow:  10px rgba(0, 0, 0, 0.3);
     overflow: hidden; /* Prevent overflow */
+    align-items: center;
+    justify-content: center;
 }
 
 .about-slider h2 {
@@ -111,7 +115,9 @@
 }
 
 .about-slider p {
-    font-size: 16px; /* Default paragraph size */
+    font-size: 18px;
+    margin: 12px;
+    padding-right: 12px;
 }
 
 /* Hover Effects */
@@ -120,6 +126,10 @@
     color: #fff;
     transform: scale(1.05); /* Slight scale on hover */
     transition: transform 0.3s ease; /* Smooth transition */
+    
+}
+.about-slider h2:hover{
+    color:white
 }
 
 .paragraph {
@@ -145,16 +155,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 .slider-second{
     display: flex;
     justify-content: center;
-        align-items: center;
+     align-items: center;
+     padding: 0;
 
+}
+.li{
+    margin-bottom: 20px;
 }
 .slide{
     margin: 5px;
-    padding: 5px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ccc; 
+    padding: 15px;         
+    border-radius: 5px;
 }
 
 /* Media Query for smaller screens */
@@ -171,6 +190,8 @@
 
     .about-title h2 {
         margin-left: 30px;
+        font-size: 23px;
+
     }
 
     .about-title h3 {
@@ -187,7 +208,7 @@
 
     .about-bottom h2 {
         font-size: 20px;
-        margin-left: 20%;
+
     }
 
     .about-bottom p {
@@ -201,18 +222,7 @@
     .about-slider p {
         font-size: 14px; /* Adjust for smaller screens */
     }
-.slider-first {
-      display: block;
-        width: 80%;
-        margin: auto;
-        border-radius: 12px;  
-      }
-    .slider-second{
-        display: block;
-        width: 80%;
-        margin: auto;
-        border-radius: 12px;
-    }
+
 }
 
 
