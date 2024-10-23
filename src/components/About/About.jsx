@@ -112,7 +112,7 @@ const About = () => {
                                 <div className='user-info'>
                                     <img src={user_2} alt='' />
                                     <div>
-                                        <h3>Biniyam</h3>
+                                        <h3>Biniyammmm</h3>
                                         <span>Administrative Assistant</span>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ const About = () => {
                                     <img src={user_3} alt='' />
                                     <div>
                                         <h3>G/Selassie</h3>
-                                        <span>Head- Operational Management</span>
+                                        <span>Operational Management</span>
                                     </div>
                                 </div>
                                 <p>Make collaboration with the quality assurance body to ensure the objectives of the
