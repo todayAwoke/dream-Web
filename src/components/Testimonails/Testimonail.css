@@ -1,0 +1,129 @@
+.testimonail {
+    margin: 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+.testimonail h1{
+    font-size: 26px;
+    font-weight: bolder;
+}
+.next-btn,
+.back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    outline: 0;
+    background: #076e83;
+    color: #fff;
+    width: 40px;
+}
+
+.back-btn {
+    left: 0;
+}
+
+.slider {
+    display: block;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.slider-fisrt,
+.slider-second {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.slider ul {
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: row;
+}
+
+.slider ul li {
+    width: 50%; /* Default width for larger screens */
+    list-style: none;
+    padding: 20px;
+}
+
+.slide {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.slide:hover {
+    background: #076e83;
+    color: #fff;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.slide img {
+    width: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #076e83;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #076e83;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .slider ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .slide {
+        width: 100%; /* Full width on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .slider-fisrt,
+    .slider-second {
+        display: block; /* Stack for small screens */
+    }
+
+    .user-info {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .user-info h3 {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+
+    .user-info span {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}

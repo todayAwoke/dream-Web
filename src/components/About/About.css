@@ -1,0 +1,228 @@
+.about {
+    margin: 80px 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.about-top {
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.story {
+
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right {
+    flex-basis: 56%;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.about-img {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 34px;
+    margin-top: -15%;
+}
+
+.play-con {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #0a7095;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: 50%;
+}
+
+.about h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #0a7095;
+    margin: 10px 0;
+    max-width: 400px;
+    margin-left: 50%;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.second-p {
+    margin-top: 20px;
+}
+
+.about-bottom {
+    margin: 80px 0;
+    display: flex;
+    align-items: center;
+     justify-content: center; 
+    width: 90%;
+    /* flex-basis: 20%; */
+}
+
+
+.about-slider {
+    margin: 0 30px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0;
+    line-height: 1.4;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow:  10px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Prevent overflow */
+    align-items: center;
+    justify-content: center;
+}
+
+.about-slider h2 {
+    margin-left: 0;
+    font-size: 24px; /* Default font size */
+}
+
+.about-slider p {
+    font-size: 18px;
+    margin: 12px;
+    padding-right: 12px;
+}
+
+/* Hover Effects */
+.about-slider:hover {
+    background: #076e83;
+    color: #fff;
+    transform: scale(1.05); /* Slight scale on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+    
+}
+.about-slider h2:hover{
+    color:white
+}
+
+.paragraph {
+    font-size: 16px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+.our-team{
+    margin-top: 5px;
+}
+.our-team h2 {
+    margin: 0;
+    color: #076e83;
+    font-size: 30px;
+    font-weight: 600;
+}
+.slider{
+    display: block;
+    margin:20px;
+}
+.slider-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.slider-second{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     padding: 0;
+
+}
+.li{
+    margin-bottom: 20px;
+}
+.slide{
+    margin: 5px;
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ccc; 
+    padding: 15px;         
+    border-radius: 5px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 680px) {
+    .main-content {
+        display: block;
+        align-items: center !important;
+        justify-content: center;
+    }
+
+    .about-right h2 {
+        font-size: 20px !important;
+    }
+
+    .about-title h2 {
+        margin-left: 30px;
+        font-size: 23px;
+
+    }
+
+    .about-title h3 {
+        margin-left: 100px;
+    }
+
+    .about-right p {
+        font-size: 16px !important;
+    }
+
+    .about-bottom {
+        display: block !important;
+    }
+
+    .about-bottom h2 {
+        font-size: 20px;
+
+    }
+
+    .about-bottom p {
+        font-size: 16px;
+    }
+
+    .about-slider h2 {
+        font-size: 20px; /* Adjust for smaller screens */
+    }
+
+    .about-slider p {
+        font-size: 14px; /* Adjust for smaller screens */
+    }
+
+}
+
+
+/* Media Query for smaller screens */
+

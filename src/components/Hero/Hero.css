@@ -1,0 +1,122 @@
+
+.hero{
+    width: 100%;
+    height: 100vh;
+     min-height: 400px;
+    /* background:linear-gradient(rgba(8,0,58,0.5),rgba(8,0,58,0.7)), url("../../assets/hero.jpg"); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.typedText{ 
+    margin-top:10%
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add some padding */
+}
+
+.bg-image{
+    background-image: cover !important;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    z-index: 1; /* Keep the background behind other content */
+}
+
+
+.btn{
+   background: #076e83 !important;
+    color: #fff !important;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#right-btn{
+    margin-left: 20px;
+   background: #0ca76e !important;
+}
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+    position: absolute;
+}
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero-para{
+    margin-top: 12px auto 20px;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+/* media query */
+@media(max-width:780px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .btn{
+        width: 80px !important; 
+        height: 34px !important;
+        font-size: 11px !important; 
+        align-items: center !;
+        justify-content: center !important;
+    }
+.typedText{
+    font-size:18px
+}
+    .arrow{
+        display: none !important;
+    }
+
+}
+@media(max-width:650px){
+    .hero-text h1{
+        font-size: 30px;
+        max-width: 400px;
+    }
+.hero {
+        height: 60vh; /* Reduce height on smaller screens */
+    }
+.typedText{
+   font-size: 15px;
+   display:block;
+}
+    .btn {
+        width: 100%; /* Make buttons full width */
+        font-size: 14px; /* Smaller font size */
+    }
+    .hero-text p{
+        font-size: 15px;
+        max-width: 350px;
+    }
+}
