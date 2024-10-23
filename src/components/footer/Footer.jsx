@@ -31,7 +31,6 @@ const Footer = () => {
                     <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
                         <li className='cursor-pointer'>Terms of Services</li>
                         <li className='cursor-pointer'>Privacy Policy</li>
-                        <li className='cursor-pointer'>Cookie Policy</li>
                     </ul>
                 </div>
             </div>

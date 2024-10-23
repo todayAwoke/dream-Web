@@ -8,9 +8,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 10; */
     background: #076e83;
-    z-index: 1; /* Add this line */
+    z-index: 1;
     }
     .logo{
         width: 60px;
@@ -34,14 +33,15 @@ nav{
     .toggleMenu{
         display:none;
     }
+
+
     .dark-nav{
         background: #076e83;
         transition: 0.5s;
     }
     nav ul li a{
         text-decoration: none;
-        color: #fff;
-       
+        color: #fff;  
     }
     nav ul li::after{
         content: '';
@@ -56,7 +56,6 @@ nav{
     nav ul li:hover::after{
         width: 100%;
     }
-    /* media queries */
     .menu-icon{
         display: none;
     }
@@ -66,10 +65,8 @@ nav{
             margin-top: -10px;
             cursor: pointer;
         }
-       
         nav ul li{
             margin: 10px 15px;
-            /* display: block; */
         }
     }
     @media(max-width: 600px){

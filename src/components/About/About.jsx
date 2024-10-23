@@ -59,7 +59,7 @@ const About = () => {
                 animate="visible"
                 variants={fadeInUp}>
                     
-                <p className='p-18 text-center sm:text-xl my-10 transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 px-6'>{t('Aboutparagraph')} </p>
+                <p className='p-18 text-center  sm:text-xl my-10 transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 px-6'>{t('Aboutparagraph')} </p>
             </motion.div>
             <div className='about' id='about'>
                 <div className='about-top'>
@@ -68,7 +68,7 @@ const About = () => {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInUp}>
-                        <h2  className=' transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutheader')}</h2>
+                        <h2  className=' text-[#076e83] transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutheader')}</h2>
                     </motion.div>
                     <div className='main-content'>
                         <div className='about-left'>
@@ -104,8 +104,7 @@ const About = () => {
                     className='about-bottom'
                     initial="hidden"
                     animate="visible"
-                    variants={fadeInUp}
-                >
+                    variants={fadeInUp} >
                     <div className='about-slider borderd shadow-2xl'>
                         <h2>{t('mesionheader')}</h2>
                         <p>{t('mesionparagraph')}</p>
