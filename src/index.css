@@ -8,8 +8,12 @@
     font-family: "Outfit", sans-serif;
     overflow-x: hidden;
 }
-body{
-    background: #fff;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+     background: #fff;
 }
 a{
     text-decoration: none;

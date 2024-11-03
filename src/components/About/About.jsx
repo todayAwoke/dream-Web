@@ -13,12 +13,12 @@ import user_5 from '../../assets/nati.jpg'
 
 const people = [
     {
-        name: 'Kaleab',
+        name: 'Kaleab Moges',
         role: 'Executive Manager',
         imageUrl: user_1,
     },
     {
-        name: 'Biniyam',
+        name: 'Biniyam Tadesse ',
         role: 'Administrative Assistant Manager',
         imageUrl: user_2,
     },
@@ -28,12 +28,12 @@ const people = [
         imageUrl: user_3,
     },
     {
-        name: 'Natnail',
+        name: 'Natnail Abebe',
         role: 'Operational Manager',
         imageUrl: user_5,
     },
     {
-        name: 'Endale',
+        name: 'Endale Hailemariam',
         role: 'Quality Assurance Manager',
         imageUrl: "",
     },
@@ -52,13 +52,13 @@ const About = () => {
     };
     return (
         <div className='' >
-            <Title  subTitle='About us' title='Who we are' />
+            <Title subTitle='About us' title='Who we are' />
             <motion.div
                 className='sm:px-32'
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}>
-                    
+
                 <p className='p-18 text-center  sm:text-xl my-10 transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 px-6'>{t('Aboutparagraph')} </p>
             </motion.div>
             <div className='about' id='about'>
@@ -68,7 +68,7 @@ const About = () => {
                         initial="hidden"
                         animate="visible"
                         variants={fadeInUp}>
-                        <h2  className=' text-[#076e83] transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutheader')}</h2>
+                        <h2 className=' text-[#076e83] transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>{t('Aboutheader')}</h2>
                     </motion.div>
                     <div className='main-content'>
                         <div className='about-left'>
@@ -140,17 +140,17 @@ const About = () => {
 
                 </div>
                 <div className="m-auto px-10">
-                <ul role="list" className="grid grid-cols-1 sm:gap-x-8 md:gap-x-20 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 mb-12 xl:col-span-3 px-7">
+                    <ul role="list" className="grid grid-cols-1 sm:gap-x-8 md:gap-x-10 gap-y-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-16 mb-12 xl:col-span-3 px-7">
                         {people.map((person) => (
                             <li key={person.name} className="bg-white rounded-2xl shadow-md p-4  cursor-pointer hover:bg-[#076e83] hover:text-white  relative transform transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">                                <div className="flex items-center gap-x-6">
                                 <img alt="" src={person.imageUrl} className="h-28 sm:h-32 w-32 rounded-full" />
                                 <div>
                                     <h3 className="text-base font-semibold leading-7 tracking-tight  md:text-xl">{person.name}</h3>
-                                    <p className="text-sm sm:text font-semibold  md:text-xl">{person.role}</p>
+                                    <p className="text-xs sm:text-sm  lg:text-xl ">{person.role}</p>
                                 </div>
                             </div>
                                 {/* Social media icons */}
-                                <div className="absolute sm:bottom-4 bottom-2  right-4 flex space-x-2">
+                                <div className="absolute sm:bottom-2 bottom-2  right-4 flex space-x-2">
                                     <a href="#" className="text-indigo-800 hover:text-white border border-indigo-500 rounded-md px-2 py-1 transition-colors duration-200 hover:bg-indigo-500">
                                         View More...
                                     </a>
